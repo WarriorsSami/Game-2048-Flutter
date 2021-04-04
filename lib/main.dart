@@ -228,19 +228,19 @@ class TwentyFortyEightState extends State<TwentyFortyEight> with TickerProviderS
                   ),
                   child: GestureDetector(
                     onVerticalDragEnd: (details) {
-                      if (details.velocity.pixelsPerSecond.dy < -500 && canSwipeUp()) {
+                      if (details.velocity.pixelsPerSecond.dy < -300 && canSwipeUp()) {
                         // swipe up
                         doSwipe(swipeUp);
-                      } else if (details.velocity.pixelsPerSecond.dy > 500 && canSwipeDown()) {
+                      } else if (details.velocity.pixelsPerSecond.dy > 300 && canSwipeDown()) {
                         // swipe down
                         doSwipe(swipeDown);
                       }
                     },
                     onHorizontalDragEnd: (details) {
-                      if (details.velocity.pixelsPerSecond.dx < -500 && canSwipeLeft()) {
+                      if (details.velocity.pixelsPerSecond.dx < -100 && canSwipeLeft()) {
                         // swipe left
                         doSwipe(swipeLeft);
-                      } else if (details.velocity.pixelsPerSecond.dx > 500 && canSwipeRight()) {
+                      } else if (details.velocity.pixelsPerSecond.dx > 100 && canSwipeRight()) {
                         // swipe right
                         doSwipe(swipeRight);
                       }
