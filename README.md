@@ -1,4 +1,4 @@
-# game_2048
+# game_2048 using Flutter framework 
 
 A new Flutter application.
 
